@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb://hungdm:incorrect@149.28.138.64:27017/countword-website"
+}

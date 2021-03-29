@@ -1,0 +1,749 @@
+Server is listening at port 5000
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcom
+{ link: 'http://kentintl.com/', countWord: 549 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomabout
+{ link: 'http://kentintl.com/about/', countWord: 239 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomturnkeyinteriorsolutions
+{
+  link: 'http://kentintl.com/turnkey-interior-solutions/',
+  countWord: 359
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcommanufacturingoffurnitures
+{
+  link: 'http://kentintl.com/manufacturing-of-furnitures/',
+  countWord: 253
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcommetalworkmanufacturing
+{
+  link: 'http://kentintl.com/metalwork-manufacturing/',
+  countWord: 128
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomgrcmanufacturing
+{ link: 'http://kentintl.com/grc-manufacturing/', countWord: 297 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtrading
+{ link: 'http://kentintl.com/trading/', countWord: 341 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomnewproject
+{ link: 'http://kentintl.com/new-project/', countWord: 120 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomevents
+{ link: 'http://kentintl.com/events/', countWord: 64 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcontact
+{ link: 'http://kentintl.com/contact/', countWord: 102 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomclassicenglish
+{ link: 'http://kentintl.com/classic-english/', countWord: 89 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsetihadairwayshaladesertcampabudhabi
+{
+  link: 'http://kentintl.com/projects/etihad-airways-hala-desert-camp-abu-dhabi/',
+  countWord: 67
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsbellagiocasinocolombosrilanka
+{
+  link: 'http://kentintl.com/projects/bellagio-casino-colombo-sri-lanka/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsprivatevilla
+{
+  link: 'http://kentintl.com/projects/private-villa-5/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsprivatevilla
+{
+  link: 'http://kentintl.com/projects/private-villa-4/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsprivatevilla
+{
+  link: 'http://kentintl.com/projects/private-villa-3/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsprivatevilla
+{
+  link: 'http://kentintl.com/projects/private-villa-2/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsprivatevilla
+{
+  link: 'http://kentintl.com/projects/private-villa-1/',
+  countWord: 80
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectstheclinicdifcdubai
+{
+  link: 'http://kentintl.com/projects/the-clinic-difc-dubai/',
+  countWord: 64
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsamericanhospitalextensionatoudmethaareadubai
+{
+  link: 'http://kentintl.com/projects/american-hospital-extension-at-oud-metha-area-dubai/',
+  countWord: 68
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsalmaktoumhospitalredevelopmentdubai
+{
+  link: 'http://kentintl.com/projects/al-maktoum-hospital-redevelopment-dubai/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsimgthemeparkdubai
+{
+  link: 'http://kentintl.com/projects/img-theme-park-dubai/',
+  countWord: 64
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsadventurehqdalmamallabudhabi
+{
+  link: 'http://kentintl.com/projects/adventure-hq-dalma-mall-abu-dhabi/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsenvironmenthoabudhabi
+{
+  link: 'http://kentintl.com/projects/environment-ho-abu-dhabi/',
+  countWord: 64
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsalshamsiinternationalhooudmethadubai
+{
+  link: 'http://kentintl.com/projects/al-shamsi-international-ho-oud-metha-dubai/',
+  countWord: 67
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsrakbankhqatsiliconoasisdubai
+{
+  link: 'http://kentintl.com/projects/rak-bank-hq-at-silicon-oasis-dubai/',
+  countWord: 67
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsalbahrtowersabudhabi
+{
+  link: 'http://kentintl.com/projects/al-bahr-towers-abu-dhabi/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsetihadstaffcanteenpresentmidfieldairport
+{
+  link: 'http://kentintl.com/projects/etihad-staff-canteen-present-midfield-airport/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsmidfieldairportterminalabudhabi
+{
+  link: 'http://kentintl.com/projects/midfield-airport-terminal-abu-dhabi/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsfirstandbusinessclassloungeterminalabudhabiinternationalairportforetihadairways
+{
+  link: 'http://kentintl.com/projects/first-and-business-class-lounge-terminal-1-abu-dhabi-international-airport-for-etihad-airways/',
+  countWord: 73
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsleftbankrestaurantmadinajumeirahdubai
+{
+  link: 'http://kentintl.com/projects/left-bank-restaurant-madina-jumeirah-dubai/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsbaronessrestaurantbardisthcmcvietnam
+{
+  link: 'http://kentintl.com/projects/baroness-restaurant-bar-dist-1-hcmc-vietnam/',
+  countWord: 68
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectscostacafemadinatjumeirahdubai
+{
+  link: 'http://kentintl.com/projects/costa-cafe-madinat-jumeirah-dubai/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectshardrockcafedubaifestivalcitydubai
+{
+  link: 'http://kentintl.com/projects/hard-rock-cafe-dubai-festival-city-dubai/',
+  countWord: 67
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectscocosrestaurantdeiracitycentredubai
+{
+  link: 'http://kentintl.com/projects/cocos-restaurant-deira-city-centre-dubai/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsmeydanhotelmeydandubaiuae
+{
+  link: 'http://kentintl.com/projects/meydan-hotel-meydan-dubai-uae/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsmarinashkzayedroaddubaiuae
+{
+  link: 'http://kentintl.com/projects/marina-101-shk-zayed-road-dubai-uae/',
+  countWord: 67
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectskingsburyhotelcolombosrilanka
+{
+  link: 'http://kentintl.com/projects/kingsbury-hotel-colombo-sri-lanka/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsjebelaliresortandspajebelalidubai
+{
+  link: 'http://kentintl.com/projects/jebel-ali-resort-and-spa-jebel-ali-dubai/',
+  countWord: 68
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectscentrorotanasharjahairportsharjahdubai
+{
+  link: 'http://kentintl.com/projects/centro-rotana-sharjah-airport-sharjah-dubai/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsthegrandmountainhotelatmatalesrilanka
+{
+  link: 'http://kentintl.com/projects/the-grand-mountain-hotel-at-matale-sri-lanka/',
+  countWord: 68
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectscinnamonredatcolombosrilanka
+{
+  link: 'http://kentintl.com/projects/cinnamon-red-at-colombo-sri-lanka/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsamariresortsandspamaldives
+{
+  link: 'http://kentintl.com/projects/amari-resorts-and-spa-maldives/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsspecialprojects
+{
+  link: 'http://kentintl.com/projects/special-projects/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsretailsshoppingmall
+{
+  link: 'http://kentintl.com/projects/retails-shopping-mall/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsairportslounges
+{
+  link: 'http://kentintl.com/projects/airports-lounges/',
+  countWord: 66
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectshospitalsclinics
+{
+  link: 'http://kentintl.com/projects/hospitals-clinics/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectscorporateoffices
+{
+  link: 'http://kentintl.com/projects/corporate-offices/',
+  countWord: 64
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectselectroplatedmetalworks
+{
+  link: 'http://kentintl.com/projects/electroplated-metalworks/',
+  countWord: 62
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectspowdercoatedmetalworks
+{
+  link: 'http://kentintl.com/projects/powder-coated-metalworks/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsgalvanizedirongi
+{
+  link: 'http://kentintl.com/projects/galvanized-iron-gi/',
+  countWord: 63
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsstainlesssteell
+{
+  link: 'http://kentintl.com/projects/stainless-steel-304-316l/',
+  countWord: 62
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsmildsteel
+{ link: 'http://kentintl.com/projects/mild-steel/', countWord: 62 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectshandrailsgrills
+{
+  link: 'http://kentintl.com/projects/handrails-grills/',
+  countWord: 149
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsgfrcgfrpproducts
+{
+  link: 'http://kentintl.com/projects/gfrc-gfrp-products/',
+  countWord: 148
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectssignages
+{ link: 'http://kentintl.com/projects/signages/', countWord: 147 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectskitchenequipments
+{
+  link: 'http://kentintl.com/projects/kitchen-equipments-2/',
+  countWord: 64
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectskitchenequipments
+{
+  link: 'http://kentintl.com/projects/kitchen-equipments/',
+  countWord: 148
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsretailshopfittings
+{
+  link: 'http://kentintl.com/projects/retail-shop-fittings/',
+  countWord: 149
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectstilesforwallsfloors
+{
+  link: 'http://kentintl.com/projects/tiles-for-walls-floors/',
+  countWord: 151
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectslightfittings
+{
+  link: 'http://kentintl.com/projects/light-fittings/',
+  countWord: 147
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsfurnitures
+{ link: 'http://kentintl.com/projects/furnitures/', countWord: 147 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsvifagu
+{ link: 'http://kentintl.com/projects/vifa-gu-2019/', countWord: 63 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomprojectsvietbuild
+{ link: 'http://kentintl.com/projects/vietbuild-2019/', countWord: 62 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomauthorpixel
+{ link: 'http://kentintl.com/author/pixel/', countWord: 260 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomwwwfacebookcomsharersharerphp
+{
+  link: 'http://kentintl.com/www.facebook.com/sharer/sharer.php',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtwittercomhome
+{ link: 'http://kentintl.com/twitter.com/home', countWord: 65 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcompinterestcompincreatebutton
+{
+  link: 'http://kentintl.com/pinterest.com/pin/create/button/',
+  countWord: 65
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryarchitecture
+{ link: 'http://kentintl.com/category/architecture/', countWord: 280 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryarchitectureinterior
+{
+  link: 'http://kentintl.com/category/architecture-interior/',
+  countWord: 100
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryuncategorized
+{ link: 'http://kentintl.com/category/uncategorized/', countWord: 292 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategorydecoration
+{ link: 'http://kentintl.com/category/decoration/', countWord: 143 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryinspiration
+{ link: 'http://kentintl.com/category/inspiration/', countWord: 100 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryfurnitues
+{ link: 'http://kentintl.com/category/furnitues/', countWord: 131 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategorymasonry
+{ link: 'http://kentintl.com/category/masonry/', countWord: 279 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategorynews
+{ link: 'http://kentintl.com/category/news/', countWord: 371 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomcategoryplants
+{ link: 'http://kentintl.com/category/plants/', countWord: 143 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomhelloworld
+{ link: 'http://kentintl.com/2020/06/03/hello-world/', countWord: 165 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbariolodge
+{
+  link: 'http://kentintl.com/2017/05/11/discover-architecture-of-bario-lodge-2/',
+  countWord: 373
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomrectanglesquarehouseatbrooklyn
+{
+  link: 'http://kentintl.com/2017/05/11/rectangle-square-house-at-brooklyn-2/',
+  countWord: 373
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomboxedconcretehouseinwinterforest
+{
+  link: 'http://kentintl.com/2017/05/11/boxed-concrete-house-in-winter-forest-3/',
+  countWord: 373
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomthelodgewoodensimpleinlondon
+{
+  link: 'http://kentintl.com/2017/05/11/the-lodge-wooden-simple-in-london-2/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallminimalhouseonpatersonhill
+{
+  link: 'http://kentintl.com/2017/05/11/small-minimal-house-on-paterson-hill-4/',
+  countWord: 378
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomrennovateexteriorwithgardenontop
+{
+  link: 'http://kentintl.com/2017/05/11/rennovate-exterior-with-garden-on-top-2/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcominteriordesignforapartment
+{
+  link: 'http://kentintl.com/2017/05/11/interior-design-for-apartment-4/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbariolodge
+{
+  link: 'http://kentintl.com/2017/04/24/discover-architecture-of-bario-lodge/',
+  countWord: 270
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomrectanglesquarehouseatbrooklyn
+{
+  link: 'http://kentintl.com/2017/04/24/rectangle-square-house-at-brooklyn/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomboxedconcretehouseinwinterforest
+{
+  link: 'http://kentintl.com/2017/04/24/boxed-concrete-house-in-winter-forest-2/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomthelodgewoodensimpleinlondon
+{
+  link: 'http://kentintl.com/2017/04/24/the-lodge-wooden-simple-in-london/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallminimalhouseonpatersonhill
+{
+  link: 'http://kentintl.com/2017/04/24/small-minimal-house-on-paterson-hill-3/',
+  countWord: 378
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomrennovateexteriorwithgardenontop
+{
+  link: 'http://kentintl.com/2017/04/24/rennovate-exterior-with-garden-on-top/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcominteriordesignforapartment
+{
+  link: 'http://kentintl.com/2017/04/24/interior-design-for-apartment-3/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomboxedvillaforandygarmarinflorencia
+{
+  link: 'http://kentintl.com/2017/04/24/boxed-villa-for-andy-garmar-in-florencia/',
+  countWord: 378
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/05/04/discover-architecture-of-bario-7/',
+  countWord: 145
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallhousenearwroclaw
+{
+  link: 'http://kentintl.com/2017/05/02/small-house-near-wroclaw/',
+  countWord: 500
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomboxedconcretehouseinwinterforest
+{
+  link: 'http://kentintl.com/2017/04/24/boxed-concrete-house-in-winter-forest/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallhousenearwroclaw
+{
+  link: 'http://kentintl.com/2017/04/21/small-house-near-wroclaw-2/',
+  countWord: 500
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcompostgallery
+{
+  link: 'http://kentintl.com/2017/04/17/post-gallery/',
+  countWord: 455
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/05/03/discover-architecture-of-bario-6/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcominteriordesignforapartment
+{
+  link: 'http://kentintl.com/2017/04/22/interior-design-for-apartment-2/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomthelodgewoondeninlondon
+{
+  link: 'http://kentintl.com/2017/04/22/the-lodge-woonden-in-london-2/',
+  countWord: 376
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomboxedvillaforandygarmarinflorencia
+{
+  link: 'http://kentintl.com/2017/05/11/boxed-villa-for-andy-garmar-in-florencia-2/',
+  countWord: 378
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomredesignexteriorofemmeofficie
+{
+  link: 'http://kentintl.com/2017/05/11/redesign-exterior-of-emme-officie-2/',
+  countWord: 376
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomlivingroominteriordesignforapartment
+{
+  link: 'http://kentintl.com/2017/05/11/living-room-interior-design-for-apartment-2/',
+  countWord: 377
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomgeometricsquarevillaongermany
+{
+  link: 'http://kentintl.com/2017/05/11/geometric-square-villa-on-germany-2/',
+  countWord: 376
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomthelodgewoondeninlondon
+{
+  link: 'http://kentintl.com/2017/04/20/the-lodge-woonden-in-london/',
+  countWord: 461
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcominteriordesignforapartment
+{
+  link: 'http://kentintl.com/2017/04/20/interior-design-for-apartment/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallminimalhouseonpatersonhill
+{
+  link: 'http://kentintl.com/2017/04/20/small-minimal-house-on-paterson-hill/',
+  countWord: 148
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/04/20/discover-architecture-of-bario-4/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/04/13/discover-architecture-of-bario-3/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/04/13/discover-architecture-of-bario-2/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/04/13/discover-architecture-of-bario/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomdiscoverarchitectureofbario
+{
+  link: 'http://kentintl.com/2017/04/23/discover-architecture-of-bario-5/',
+  countWord: 375
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomsmallminimalhouseonpatersonhill
+{
+  link: 'http://kentintl.com/2017/04/22/small-minimal-house-on-paterson-hill-2/',
+  countWord: 378
+} ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtagdecoration
+{ link: 'http://kentintl.com/tag/decoration/', countWord: 263 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtaginspiration
+{ link: 'http://kentintl.com/tag/inspiration/', countWord: 202 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtagminimal
+{ link: 'http://kentintl.com/tag/minimal/', countWord: 263 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtagworkspace
+{ link: 'http://kentintl.com/tag/workspace/', countWord: 263 } ,
+D:\Dinh Hung\Documents\Learning\ReactJS - Redux\Practice\website-crawling
+httpkentintlcomtagtagsinspiration
+{ link: 'http://kentintl.com/tag/tags-inspiration/', countWord: 115 } ,
+done!
+Total: 23618
+http://kentintl.com/ 549
+http://kentintl.com/about/ 239
+http://kentintl.com/turnkey-interior-solutions/ 359
+http://kentintl.com/manufacturing-of-furnitures/ 253
+http://kentintl.com/metalwork-manufacturing/ 128
+http://kentintl.com/grc-manufacturing/ 297
+http://kentintl.com/trading/ 341
+http://kentintl.com/new-project/ 120
+http://kentintl.com/events/ 64
+http://kentintl.com/contact/ 102
+http://kentintl.com/classic-english/ 89
+http://kentintl.com/projects/etihad-airways-hala-desert-camp-abu-dhabi/ 67
+http://kentintl.com/projects/bellagio-casino-colombo-sri-lanka/ 65
+http://kentintl.com/projects/private-villa-5/ 63
+http://kentintl.com/projects/private-villa-4/ 63
+http://kentintl.com/projects/private-villa-3/ 63
+http://kentintl.com/projects/private-villa-2/ 63
+http://kentintl.com/projects/private-villa-1/ 80
+http://kentintl.com/projects/the-clinic-difc-dubai/ 64
+http://kentintl.com/projects/american-hospital-extension-at-oud-metha-area-dubai/ 68
+http://kentintl.com/projects/al-maktoum-hospital-redevelopment-dubai/ 65
+http://kentintl.com/projects/img-theme-park-dubai/ 64
+http://kentintl.com/projects/adventure-hq-dalma-mall-abu-dhabi/ 66
+http://kentintl.com/projects/environment-ho-abu-dhabi/ 64
+http://kentintl.com/projects/al-shamsi-international-ho-oud-metha-dubai/ 67
+http://kentintl.com/projects/rak-bank-hq-at-silicon-oasis-dubai/ 67
+http://kentintl.com/projects/al-bahr-towers-abu-dhabi/ 65
+http://kentintl.com/projects/etihad-staff-canteen-present-midfield-airport/ 66
+http://kentintl.com/projects/midfield-airport-terminal-abu-dhabi/ 65
+http://kentintl.com/projects/first-and-business-class-lounge-terminal-1-abu-dhabi-international-airport-for-etihad-airways/ 73
+http://kentintl.com/projects/left-bank-restaurant-madina-jumeirah-dubai/ 66
+http://kentintl.com/projects/baroness-restaurant-bar-dist-1-hcmc-vietnam/ 68
+http://kentintl.com/projects/costa-cafe-madinat-jumeirah-dubai/ 65
+http://kentintl.com/projects/hard-rock-cafe-dubai-festival-city-dubai/ 67
+http://kentintl.com/projects/cocos-restaurant-deira-city-centre-dubai/ 66
+http://kentintl.com/projects/meydan-hotel-meydan-dubai-uae/ 65
+http://kentintl.com/projects/marina-101-shk-zayed-road-dubai-uae/ 67
+http://kentintl.com/projects/kingsbury-hotel-colombo-sri-lanka/ 65
+http://kentintl.com/projects/jebel-ali-resort-and-spa-jebel-ali-dubai/ 68
+http://kentintl.com/projects/centro-rotana-sharjah-airport-sharjah-dubai/ 66
+http://kentintl.com/projects/the-grand-mountain-hotel-at-matale-sri-lanka/ 68
+http://kentintl.com/projects/cinnamon-red-at-colombo-sri-lanka/ 66
+http://kentintl.com/projects/amari-resorts-and-spa-maldives/ 65
+http://kentintl.com/projects/special-projects/ 65
+http://kentintl.com/projects/retails-shopping-mall/ 65
+http://kentintl.com/projects/airports-lounges/ 66
+http://kentintl.com/projects/hospitals-clinics/ 63
+http://kentintl.com/projects/corporate-offices/ 64
+http://kentintl.com/projects/electroplated-metalworks/ 62
+http://kentintl.com/projects/powder-coated-metalworks/ 63
+http://kentintl.com/projects/galvanized-iron-gi/ 63
+http://kentintl.com/projects/stainless-steel-304-316l/ 62
+http://kentintl.com/projects/mild-steel/ 62
+http://kentintl.com/projects/handrails-grills/ 149
+http://kentintl.com/projects/gfrc-gfrp-products/ 148
+http://kentintl.com/projects/signages/ 147
+http://kentintl.com/projects/kitchen-equipments-2/ 64
+http://kentintl.com/projects/kitchen-equipments/ 148
+http://kentintl.com/projects/retail-shop-fittings/ 149
+http://kentintl.com/projects/tiles-for-walls-floors/ 151
+http://kentintl.com/projects/light-fittings/ 147
+http://kentintl.com/projects/furnitures/ 147
+http://kentintl.com/projects/vifa-gu-2019/ 63
+http://kentintl.com/projects/vietbuild-2019/ 62
+http://kentintl.com/author/pixel/ 260
+http://kentintl.com/www.facebook.com/sharer/sharer.php 65
+http://kentintl.com/twitter.com/home 65
+http://kentintl.com/pinterest.com/pin/create/button/ 65
+http://kentintl.com/category/architecture/ 280
+http://kentintl.com/category/architecture-interior/ 100
+http://kentintl.com/category/uncategorized/ 292
+http://kentintl.com/category/decoration/ 143
+http://kentintl.com/category/inspiration/ 100
+http://kentintl.com/category/furnitues/ 131
+http://kentintl.com/category/masonry/ 279
+http://kentintl.com/category/news/ 371
+http://kentintl.com/category/plants/ 143
+http://kentintl.com/2020/06/03/hello-world/ 165
+http://kentintl.com/2017/05/11/discover-architecture-of-bario-lodge-2/ 373
+http://kentintl.com/2017/05/11/rectangle-square-house-at-brooklyn-2/ 373
+http://kentintl.com/2017/05/11/boxed-concrete-house-in-winter-forest-3/ 373
+http://kentintl.com/2017/05/11/the-lodge-wooden-simple-in-london-2/ 377
+http://kentintl.com/2017/05/11/small-minimal-house-on-paterson-hill-4/ 378
+http://kentintl.com/2017/05/11/rennovate-exterior-with-garden-on-top-2/ 377
+http://kentintl.com/2017/05/11/interior-design-for-apartment-4/ 375
+http://kentintl.com/2017/04/24/discover-architecture-of-bario-lodge/ 270
+http://kentintl.com/2017/04/24/rectangle-square-house-at-brooklyn/ 377
+http://kentintl.com/2017/04/24/boxed-concrete-house-in-winter-forest-2/ 377
+http://kentintl.com/2017/04/24/the-lodge-wooden-simple-in-london/ 377
+http://kentintl.com/2017/04/24/small-minimal-house-on-paterson-hill-3/ 378
+http://kentintl.com/2017/04/24/rennovate-exterior-with-garden-on-top/ 377
+http://kentintl.com/2017/04/24/interior-design-for-apartment-3/ 375
+http://kentintl.com/2017/04/24/boxed-villa-for-andy-garmar-in-florencia/ 378
+http://kentintl.com/2017/05/04/discover-architecture-of-bario-7/ 145
+http://kentintl.com/2017/05/02/small-house-near-wroclaw/ 500
+http://kentintl.com/2017/04/24/boxed-concrete-house-in-winter-forest/ 377
+http://kentintl.com/2017/04/21/small-house-near-wroclaw-2/ 500
+http://kentintl.com/2017/04/17/post-gallery/ 455
+http://kentintl.com/2017/05/03/discover-architecture-of-bario-6/ 375
+http://kentintl.com/2017/04/22/interior-design-for-apartment-2/ 375
+http://kentintl.com/2017/04/22/the-lodge-woonden-in-london-2/ 376
+http://kentintl.com/2017/05/11/boxed-villa-for-andy-garmar-in-florencia-2/ 378
+http://kentintl.com/2017/05/11/redesign-exterior-of-emme-officie-2/ 376
+http://kentintl.com/2017/05/11/living-room-interior-design-for-apartment-2/ 377
+http://kentintl.com/2017/05/11/geometric-square-villa-on-germany-2/ 376
+http://kentintl.com/2017/04/20/the-lodge-woonden-in-london/ 461
+http://kentintl.com/2017/04/20/interior-design-for-apartment/ 375
+http://kentintl.com/2017/04/20/small-minimal-house-on-paterson-hill/ 148
+http://kentintl.com/2017/04/20/discover-architecture-of-bario-4/ 375
+http://kentintl.com/2017/04/13/discover-architecture-of-bario-3/ 375
+http://kentintl.com/2017/04/13/discover-architecture-of-bario-2/ 375
+http://kentintl.com/2017/04/13/discover-architecture-of-bario/ 375
+http://kentintl.com/2017/04/23/discover-architecture-of-bario-5/ 375
+http://kentintl.com/2017/04/22/small-minimal-house-on-paterson-hill-2/ 378
+http://kentintl.com/tag/decoration/ 263
+http://kentintl.com/tag/inspiration/ 202
+http://kentintl.com/tag/minimal/ 263
+http://kentintl.com/tag/workspace/ 263
+http://kentintl.com/tag/tags-inspiration/ 115

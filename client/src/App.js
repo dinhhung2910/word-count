@@ -1,9 +1,21 @@
-import React, {useState} from 'react';
-import ApplicationRoutes from './config/ApplicationRoutes';
+import React, {Fragment} from 'react';
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
+import './App.css';
+import {WordCount} from './pages/WordCount';
 
-function App() {  
+/**
+ *
+ * @return {*} Main application
+ */
+function App() {
   return (
-    <ApplicationRoutes/>
+    <Fragment>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={WordCount} />
+        </Switch>
+      </Router>
+    </Fragment>
   );
 }
 
