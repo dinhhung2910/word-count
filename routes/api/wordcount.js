@@ -5,6 +5,7 @@ const router = express.Router();
 const CountWordWebsite = require('../../utils/countwordwebsite');
 const GetIPFromRequest = require('../../utils/getIPFromRequest');
 const requestSocket = require('../../socket/request');
+const {exportRequest} = require('../../src/export');
 
 router.get('/:requestId', async (req, res) => {
   try {
@@ -40,6 +41,7 @@ router.post('/', async (req, res) => {
     request.IP = GetIPFromRequest(req);
     request.include = include;
     request.exclude = exclude;
+    request.submittedDate = new Date();
 
     await request.save();
 
@@ -93,6 +95,25 @@ router.post('/abort', async (req, res) => {
     }
 
     res.status(200).send(true);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Server error.');
+  }
+});
+
+router.get('/export/:requestId', async (req, res) => {
+  try {
+    const requestId = req.params.requestId;
+
+    const request = await Request.findById(requestId);
+    if (!request || request.totalLink == 0 ||
+      request.submittedDate <= new Date() - 3600000) {
+      return res.status(404).send('File not found.');
+    }
+
+    const wb = await exportRequest(requestId);
+    console.log(wb);
+    wb.write('WordCount.xlsx', res);
   } catch (err) {
     console.error(err);
     res.status(500).send('Server error.');

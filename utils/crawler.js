@@ -1,8 +1,10 @@
+/**
+ *
+ */
 class Crawler {
-
   constructor(options) {
     this._options = options || {
-      headless: true
+      headless: true,
     };
   }
 
@@ -16,7 +18,7 @@ class Crawler {
   /**
    * Get pathname from url string
    * Remove hash, hostname, check if url is from same site
-   * @param {String} url 
+   * @param {String} url
    */
   getPathFromUrl(hostname, url) {
     // remove hash
@@ -30,20 +32,23 @@ class Crawler {
       }
     }
     // check if mail link
-    if (url.indexOf('mailto:') == 0)
+    if (url.indexOf('mailto:') == 0) {
       return null;
+    }
     // check javascript link
-    if (url.indexOf('javascript:') == 0)
+    if (url.indexOf('javascript:') == 0) {
       return null;
+    }
     // check if resource links
     let extension = url.split('.');
     extension = extension ? extension[extension.length - 1] : '';
     const excludeExtension = ['jpg', 'png', 'zip', 'rar', 'pdf'];
-    if (excludeExtension.includes(extension))
+    if (excludeExtension.includes(extension)) {
       return null;
+    }
 
     url = url.split('?')[0];
-    
+
     // check pathname
     if (url[0] == '/') {
       return url;
@@ -51,49 +56,46 @@ class Crawler {
       url = url.replace(hostname, '');
       return url;
     }
-
   }
 
   async getVisitableLink(page) {
     try {
-
       try {
-        await page.exposeFunction("getPathFromUrl", this.getPathFromUrl);
-      }
-      catch (err) {}
+        await page.exposeFunction('getPathFromUrl', this.getPathFromUrl);
+      } catch (err) {}
 
       const result = await page.evaluate(async (hostname, pathArray) => {
-        let ar_links = [];
-        let links = document.querySelectorAll('a[href]');
+        const ar_links = [];
+        const links = document.querySelectorAll('a[href]');
 
-        let pathSet = new Set(pathArray);
+        const pathSet = new Set(pathArray);
 
         for (let i = 0; i < links.length; i++) {
-          let item = links[i];
-          let href = item.getAttribute('href').trim();
-          
+          const item = links[i];
+          const href = item.getAttribute('href').trim();
+
           let nextURL = await getPathFromUrl(hostname, href);
-          if (nextURL && nextURL[0] != '/')
+          if (nextURL && nextURL[0] != '/') {
             nextURL = '/' + nextURL;
-          
+          }
+
           if (nextURL && nextURL.length && !pathSet.has(nextURL)) {
             ar_links.push(window.location.origin + nextURL);
             pathSet.add(nextURL);
           }
         }
-     
+
         return {
           nextLinks: ar_links,
-          pathSet: Array.from(pathSet)
-        }
+          pathSet: Array.from(pathSet),
+        };
       }, this._hostname, this._pathSet);
 
       const nextLinks = result.nextLinks;
       this._pathSet = result.pathSet;
 
       return nextLinks;
-    }
-    catch (err) {
+    } catch (err) {
       console.error(err);
       return [];
     }

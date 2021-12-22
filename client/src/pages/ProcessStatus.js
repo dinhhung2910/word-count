@@ -23,6 +23,20 @@ function ProcessStatus() {
     dispatch(abortRequest(requestId));
   };
 
+  const exportResult = () => {
+    fetch(`/api/wordcount/export/${requestId}`)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'wordcount.xlsx';
+        document.body.appendChild(a); // we need to append the element to the dom -> otherwise it will not work in firefox
+        a.click();
+        a.remove(); // afterwards we remove the element again
+      });
+  };
+
   return (
     <Fragment>
       {
@@ -58,6 +72,16 @@ function ProcessStatus() {
               })()}
               {' '}words.
             </Alert>
+            <Button
+              className="mt-1"
+              style={{marginLeft: '50%', transform: 'translateX(-50%)'}}
+              disabled={processing}
+              onClick={exportResult}
+              variant="outline-info">
+              <i className="fal fa-file-excel"></i>
+              {' '}
+                Export excel
+            </Button>
           </Fragment>
         ) : null
       }
