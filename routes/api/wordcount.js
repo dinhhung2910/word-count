@@ -18,7 +18,14 @@ router.get('/:requestId', async (req, res) => {
 
     const links = await Link.find({requestId}).lean();
 
-    const returnRequest = request.toObject();
+    const returnRequest = {
+      home: request.home,
+      totalLink: request.totalLink,
+      totalWord: links.reduce((acc, val) => acc + val.countWord, 0),
+      exception: request.isAborted ? 'Aborted' :
+        (request.isTimeout ? 'Request timed out' : ''),
+    };
+
     Object.assign(returnRequest, {links});
 
     res.json(returnRequest);
@@ -58,6 +65,8 @@ router.post('/', async (req, res) => {
     let total = 0;
 
     for await (const site of it) {
+      if (!site.countWord) continue;
+
       total += site.countWord;
       sumary.push(site);
       const x = Object.assign(site, {

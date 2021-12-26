@@ -5,7 +5,10 @@ const fs = require('fs');
 const Request = require('../models/Request');
 const Link = require('../models/Link');
 const md5 = require('md5');
+const config = require('config');
+const {v4} = require('uuid');
 
+const timeout = config.get('requestTimeout');
 /**
  * Crawl this homepage to get all available links
  * @param {Object} options
@@ -35,25 +38,34 @@ async function* CountWordWebsite(options, requestId) {
       let skip = false;
       const link = crawler._visitQueue.shift();
       const request = await Request.findById(requestId);
+
+      // skip if request is aborted
+      // or older than 30 minutes
       if (!request || request.isAborted) {
         skip = true;
       }
-
+      if (request && new Date() - request.submittedDate >= timeout) {
+        skip = true;
+        await Request.findByIdAndUpdate(requestId, {isTimeout: true});
+      }
 
       // check include and exclude
-      if (!skip) {
-        for (const excludePattern of exclude) {
-          if (link.includes(excludePattern)) skip = true;
-        }
-        if (include && include.length) {
-          for (const includePattern of include) {
-            if (!link.includes(includePattern)) skip = true;
+      {
+        if (!skip) {
+          for (const excludePattern of exclude) {
+            if (link.includes(excludePattern)) skip = true;
+          }
+          if (include && include.length) {
+            for (const includePattern of include) {
+              if (!link.includes(includePattern)) skip = true;
+            }
           }
         }
       }
 
       let words = null;
       let countWord = 0;
+      let id = v4();
 
       if (!skip) {
         try {
@@ -122,8 +134,10 @@ async function* CountWordWebsite(options, requestId) {
           SaveLink.shrinkedUrl = shrinkedLink;
           SaveLink.wordCount = countWord;
           SaveLink.hashedContent = hashedWord;
+          id = SaveLink._id;
+
           await SaveLink.save();
-          await page.waitForTimeout(200);
+          await page.waitForTimeout(100);
         } catch (err) {
           console.error(err);
         }
@@ -131,6 +145,7 @@ async function* CountWordWebsite(options, requestId) {
 
 
       yield {
+        _id: id,
         link,
         countWord,
         remain: crawler._visitQueue.length,

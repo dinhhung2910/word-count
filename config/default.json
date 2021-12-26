@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb://hungdm:incorrect@huugiang:27017/countword-website"
+  "mongoURI": "mongodb://hungdm:incorrect@huugiang:27017/countword-website",
+  "requestTimeout": 60000
 }

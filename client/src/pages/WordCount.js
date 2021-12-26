@@ -1,134 +1,91 @@
 /* eslint-disable max-len */
 import React, {Fragment, useState} from 'react';
 // import PropTypes from 'prop-types';
-import {connect, useDispatch, useSelector} from 'react-redux';
-import {InputGroup, Button, FormControl} from 'react-bootstrap';
+import {connect, useSelector} from 'react-redux';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  createRequest,
+  selectFirstRequest,
   selectProcessing,
-  selectRequest,
+  selectRequestId,
 } from '../features/link/linkSlice';
 import LinkSocket from '../features/link/linkSocket';
-import ProcessStatus from './ProcessStatus';
+import SearchHero from '../components/SearchHero';
+import LinksTable from '../components/LinksTable';
 
+import Rolling from '../assets/images/Rolling-primary.svg';
+import RollingWhite from '../assets/images/Rolling-white.svg';
+import Sumary from '../components/Sumary';
 
 export const WordCount = (props) => {
-  const dispatch = useDispatch();
   const processing = useSelector(selectProcessing);
-  const request = useSelector(selectRequest);
+  const first = useSelector(selectFirstRequest);
+  const requestId = useSelector(selectRequestId);
 
-  const [formData, setFormData] = useState({
-    home: '',
-    include: '',
-    exclude: '',
-  });
-  const [showMore, setShowMore] = useState(false);
+  const [exporting, setExporting] = useState(false);
 
-  const onChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
-  };
+  const exportResult = () => {
+    setExporting(true);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    const parsedFromData = {
-      home: formData.home,
-      include: formData.include ? formData.include.replaceAll('; ', ';').split(';') : [],
-      exclude: formData.exclude ? formData.exclude.replaceAll('; ', ';').split(';') : [],
-    };
-    dispatch(createRequest(parsedFromData));
-  };
-
-  const clear = () => {
-    setFormData({
-      home: '',
-      include: '',
-      exclude: '',
-    });
+    fetch(`/api/wordcount/export/${requestId}`)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'wordcount.xlsx';
+        document.body.appendChild(a); // we need to append the element to the dom -> otherwise it will not work in firefox
+        a.click();
+        a.remove(); // afterwards we remove the element again
+        setExporting(false);
+      });
   };
 
   return (
     <Fragment>
       <LinkSocket />
-      <div className="container">
-        <div className="row mt-5">
-          <div className="col-md-12">
-            <form onSubmit={onSubmit}>
-              <InputGroup>
-                <FormControl
-                  readOnly={processing}
-                  placeholder="Homepage URL"
-                  aria-describedby="basic-addon2"
-                  name="home"
-                  value={formData.home}
-                  onChange={onChange}
-                />
-                <InputGroup.Append>
-                  <Button variant="outline-warning"
-                    onClick={clear}
-                    disabled={processing}>
-                    <i className="fal fa-trash-alt"></i>
-                    {' '}
-                    Clear
-                  </Button>
-                  <Button variant="outline-primary"
-                    onClick={(e) => setShowMore(!showMore)}>
-                    <i className="fal fa-sliders-h"></i>
-                    {' '}
-                    {showMore ? 'Show less' : 'Show more'}
-                  </Button>
-                  <Button type="submit"
-                    disabled={processing}
-                    variant="outline-success">
-                    <i className="fal fa-play"></i>
-                    {' '}
-                    Start crawling
-                  </Button>
-                </InputGroup.Append>
-              </InputGroup>
-              {
-                showMore ? (
-                  <Fragment>
-                    <InputGroup className="mt-2" title="Included pattern, seperated by semicolon">
-                      <InputGroup.Prepend>
-                        <InputGroup.Text>
-                        Include
-                        </InputGroup.Text>
-                      </InputGroup.Prepend>
-                      <FormControl
-                        name="include"
-                        value={formData.include}
-                        onChange={onChange}
-                        aria-describedby="basic-addon3" />
-                    </InputGroup>
-                    <InputGroup className="mt-2" title='Excluded pattern, seperated by semicolon'>
-                      <InputGroup.Prepend>
-                        <InputGroup.Text>
-                          Exclude
-                        </InputGroup.Text>
-                      </InputGroup.Prepend>
-                      <FormControl
-                        name="exclude"
-                        value={formData.exclude}
-                        onChange={onChange}
-                        aria-describedby="basic-addon3" />
-                    </InputGroup>
-                  </Fragment>
-                ) : null
-              }
-            </form>
-            <ProcessStatus />
-            <InputGroup className="mt-4">
-              <FormControl as="textarea"
-                rows={10}
-                value={request.links.
-                  map((en) => `${en.link}\t${en.countWord}`).
-                  join('\n')}
-              />
-            </InputGroup>
+      <SearchHero />
+      <div className="container mt-4 ">
+        <h2 className="h1 my-3"><span className="text-primary">Translate</span> your website with GTELocalize.</h2>
+        <div className="row ">
+          <div className="col-8 mb-5">
+            <div className="card h-100">
+              <div className="card-body">
+                <div className="flex-2">
+                  <h3 className="h2 mb-2">Words by page</h3>
+                  <div>
+                    {
+                      first ? null : (
+                        processing ? (
+                          <div className="text-primary flex-vertical">
+                            <img src={Rolling} alt="crawling"/> <b>&ensp;Crawling... </b>
+                          </div>
+                        ) : (
+                          <button className="btn btn-export btn-primary"
+                            onClick={exportResult}
+                          >
+                            {exporting ? (
+                              <img src={RollingWhite} alt="exporting" />
+                            ) : (
+                              <i className="fal fa-download"></i>
+                            )}
+                            &ensp;Export
+                          </button>
+                        )
+                      )
+                    }
+
+                  </div>
+                </div>
+                <LinksTable />
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <Sumary />
           </div>
         </div>
+
       </div>
     </Fragment>
   );

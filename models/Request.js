@@ -29,6 +29,10 @@ const RequestSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    isTimeout: {
+      type: Boolean,
+      default: false,
+    },
     totalLink: {
       type: Number,
     },

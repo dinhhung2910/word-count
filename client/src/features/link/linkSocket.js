@@ -49,7 +49,7 @@ function LinkSocket() {
     try {
       socket.emit('create', requestId);
     } catch (e) {
-      console.warn(e);
+      if (socket) console.warn(e);
     }
   }, [socket.id]);
 
