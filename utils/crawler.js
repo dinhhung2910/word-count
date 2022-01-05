@@ -49,6 +49,11 @@ class Crawler {
 
     url = url.split('?')[0];
 
+    // check last character
+    if (url[url.length - 1] == '/') {
+      url = url.substring(0, url.length - 1);
+    }
+
     // check pathname
     if (url[0] == '/') {
       return url;
