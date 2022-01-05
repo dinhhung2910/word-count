@@ -9,6 +9,8 @@ const config = require('config');
 const {v4} = require('uuid');
 
 const timeout = config.get('requestTimeout');
+const executablePath = config.get('browserPath');
+
 /**
  * Crawl this homepage to get all available links
  * @param {Object} options
@@ -21,7 +23,10 @@ async function* CountWordWebsite(options, requestId) {
     const include = options.include || [];
     const exclude = options.exclude || [];
 
-    const browser = await puppeteer.launch({headless: true});
+    const browser = await puppeteer.launch({
+      headless: true,
+      executablePath,
+    });
     const page = await browser.newPage();
 
     page.setViewport({
@@ -73,15 +78,31 @@ async function* CountWordWebsite(options, requestId) {
           words = await page.evaluate(() => {
             try {
               const d = document.createElement('div');
-              d.innerHTML = document.body.innerHTML;
+              d.innerHTML = document.head.innerHTML;
+              d.innerHTML += document.body.innerHTML;
 
-              const noSee = d.querySelectorAll('script,noscript,style,nav');
+              const noSee = d.querySelectorAll('style,code,script');
               noSee.forEach((elm) => {
                 elm.parentElement.removeChild(elm);
               });
 
               // trim text
               let textContent = d.textContent;
+              let accesibileText = d.querySelectorAll('[title]');
+              accesibileText.forEach((elm) => {
+                textContent = textContent + '\n' + elm.getAttribute('title');
+              });
+
+              accesibileText = d.querySelectorAll('[alt]');
+              accesibileText.forEach((elm) => {
+                textContent = textContent + '\n' + elm.getAttribute('alt');
+              });
+
+              accesibileText = d.querySelectorAll('[value]');
+              accesibileText.forEach((elm) => {
+                textContent = textContent + '\n' + elm.getAttribute('value');
+              });
+
               textContent = textContent.trim();
               // trim text
               textContent = textContent.split('\n').

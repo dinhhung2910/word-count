@@ -17,11 +17,16 @@ router.get('/:requestId', async (req, res) => {
     }
 
     const links = await Link.find({requestId}).lean();
+    let totalWord = 0;
+
+    for (const link of links) {
+      totalWord += link.wordCount;
+    }
 
     const returnRequest = {
       home: request.home,
       totalLink: request.totalLink,
-      totalWord: links.reduce((acc, val) => acc + val.countWord, 0),
+      totalWord,
       exception: request.isAborted ? 'Aborted' :
         (request.isTimeout ? 'Request timed out' : ''),
     };
