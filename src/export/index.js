@@ -49,7 +49,49 @@ const exportRequest = async (requestId) => {
       color: '#000000',
       size: 12,
     },
+    border: {
+      left: {
+        style: 'thin',
+        color: '#000000',
+      },
+      right: {
+        style: 'thin',
+        color: '#000000',
+      },
+      top: {
+        style: 'thin',
+        color: '#000000',
+      },
+      bottom: {
+        style: 'thin',
+        color: '#000000',
+      },
+    },
   });
+
+  const styleHeader = Object.assign({}, style, {
+    font: {
+      color: '#000000',
+      size: 12,
+      bold: true,
+    },
+  });
+
+  const styleHeaderGray = Object.assign({
+    fill: {
+      type: 'pattern',
+      patternType: 'solid',
+      fgColor: 'dddddd',
+    },
+  }, styleHeader);
+
+  const styleHeaderMain = Object.assign({
+    fill: {
+      type: 'pattern',
+      patternType: 'solid',
+      fgColor: 'FFC000',
+    },
+  }, styleHeader);
 
   if (!request) {
     return wb;
@@ -58,32 +100,32 @@ const exportRequest = async (requestId) => {
   // Set value of cell A1 to 100 as a number type styled with paramaters of style
   ws.cell(1, 1)
     .string('Home page: ')
-    .style(style);
+    .style(styleHeaderGray);
   ws.cell(1, 2)
     .string(request.home)
     .style(style);
 
   ws.cell(2, 1)
     .string('Total pages crawled: ')
-    .style(style);
+    .style(styleHeaderGray);
   ws.cell(2, 2)
     .number(request.totalLink)
     .style(style);
 
   ws.cell(3, 1)
     .string('Total words crawled: ')
-    .style(style);
+    .style(styleHeaderGray);
   ws.cell(3, 2)
     .number(request.totalWord)
     .style(style);
 
   let line = 6;
   ws.cell(5, 1)
-    .string('Link')
-    .style(style);
-  ws.cell(6, 1)
-    .string('Words')
-    .style(style);
+    .string('URL')
+    .style(styleHeaderMain);
+  ws.cell(5, 2)
+    .string('Words in each page')
+    .style(styleHeaderMain);
 
   for (const link of links) {
     ws.cell(line, 1)
