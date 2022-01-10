@@ -2,9 +2,11 @@
 import React, {Fragment} from 'react';
 import {useResizeDetector} from 'react-resize-detector';
 import {useSelector} from 'react-redux';
+import dynamic from 'next/dynamic'
+
 import {selectFirstRequest, selectProcessing, selectRequest} from '../features/link/linkSlice';
 
-import {ReactComponent as Empty} from '../assets/images/empty.svg';
+const Empty = dynamic(() => import('../assets/images/empty.svg'), {ssr: false});
 
 
 /**

@@ -1,6 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
-import axios from 'axios';
+import {HYDRATE} from 'next-redux-wrapper';
 
+import axios from 'axios';
 
 export const linkSlice = createSlice({
   name: 'link',
@@ -78,6 +79,15 @@ export const linkSlice = createSlice({
       state.status = action.payload.status;
     },
   },
+  extraReducers: {
+    [HYDRATE]: (state, action) => {
+      console.log('HYDRATE', state, action.payload);
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
+  },
 });
 
 export const {
@@ -99,9 +109,10 @@ export const createRequest = (request) => async (dispatch) => {
   const body = request;
 
   try {
-    const res = await axios.post('/api/wordcount/',
-      JSON.stringify(body),
-      config);
+    const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_SERVER}/api/wordcount/`,
+        JSON.stringify(body),
+        config);
     dispatch(setRequestId(res.data.requestId));
   } catch (error) {
     console.log(error);
@@ -119,9 +130,10 @@ export const abortRequest = (requestId) => async (dispatch) => {
   };
 
   try {
-    await axios.post('/api/wordcount/abort',
-      JSON.stringify(body),
-      config);
+    await axios.post(
+        `${process.env.NEXT_PUBLIC_API_SERVER}/api/wordcount/abort`,
+        JSON.stringify(body),
+        config);
   } catch (error) {
     console.log(error);
   }
@@ -137,8 +149,9 @@ export const doneRequest = (requestId) => async (dispatch) => {
   };
 
   try {
-    const res = await axios.get('/api/wordcount/' + requestId,
-      config);
+    const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_API_SERVER}/api/wordcount/${requestId}`,
+        config);
     const data = res.data;
 
     try {

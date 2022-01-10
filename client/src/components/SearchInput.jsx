@@ -3,7 +3,8 @@ import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 import {useDispatch} from 'react-redux';
 import {abortRequest, createRequest, selectAborting, selectProcessing, selectRequestId} from '../features/link/linkSlice';
-import Rolling from '../assets/images/Rolling-gray.svg';
+
+import styles from '../../styles/SearchInput.module.css';
 
 /**
  *
@@ -52,7 +53,7 @@ function SearchInput() {
       <div className="col-md-10 text-center my-auto">
         <form name="form_word_count"
           onSubmit={onSubmit}>
-          <div id="" className="word_count-form position-relative w-50 mx-auto mt-5 mb-5 word_count-url">
+          <div id="" className={`word_count-form position-relative mx-auto mt-5 mb-5 word_count-url ${styles['w-input']}`}>
             <input type="text"
               name="home" required="required" label="" placeholder="Enter URL here.."
               inputMode="url"
@@ -62,18 +63,18 @@ function SearchInput() {
               value={formData.home} />
             {/* <div className="invalid-feedback">gygy</div> */}
             {!processing ? (
-              <button className="btn btn-primary" type="submit" name="submit">
-               Analyse website&ensp;
-                <i className="fal fa-angle-right"></i>
+              <button className={`btn btn-primary  ${styles['btn-input']}`} type="submit" name="submit">
+                <span className={styles['text-input']}>Analyse website&ensp;</span>
+                <i className={`fal fa-angle-right ${styles['icon-input']}`}></i>
               </button>
             ) : (
-              <button className="btn-abort btn btn-secondary btn-icon"
+              <button className={`btn-abort btn btn-secondary btn-icon`}
                 onClick={abortProcess}
                 title='Abort'>
                 {
                   aborting ?
-                    (<img src={Rolling} alt="aborting" />) :
-                    (<i className="fal fa-times"></i>)
+                    (<img src="/images/Rolling-gray.svg" alt="aborting" />) :
+                    (<i className={`fal fa-times `}></i>)
                 }
 
               </button>

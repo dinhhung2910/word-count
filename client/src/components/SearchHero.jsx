@@ -1,9 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
-import GTELogo from '../assets/images/gte-logo.png';
-import Dots1 from '../assets/images/dots (1).svg';
-import Dots2 from '../assets/images/dots (2).svg';
+
 import SearchInput from './SearchInput';
+import styles from '../../styles/SearchHero.module.css';
 
 /**
  *
@@ -14,20 +13,23 @@ function SearchHero() {
     <div
       style={{minHeight: '300px'}}
       className='bg-gradient-dark-blue w-100 pt-3'>
-      <div className="container">
+        <div className={styles['header-bg']}>
+          <img src="/images/Banner - word count.jpg" className={styles['img-bg']} alt="Banner" />
+        </div>
+      <div className="container" style={{position: 'relative', zIndex: '1'}}>
         <div className="w-100 text-center">
-          <a href="https://gtelocalize.com/">
-            <img src={GTELogo} alt="GTE Localize" style={{height: '50px'}} />
+          <a target="_blank" href="https://gtelocalize.com/">
+            <img src="/images/gte-logo.png" alt="GTE Localize" style={{height: '50px'}} />
           </a>
           <div className="position-relative mt-5">
             <h1 style={{fontSize: '2rem'}} className="text-white">
-              How many words do you have on your website?
+              Free Website Word Count Tool
             </h1>
-
+            <h2  style={{fontSize: '1.25rem'}} className="text-white">
+              Counting words in your website.
+            </h2>
             <SearchInput />
 
-            <img src={Dots1} alt="decoration" style={{position: 'absolute', left: 0, bottom: '25px'}} />
-            <img src={Dots2} alt="decoration" style={{position: 'absolute', right: 0, bottom: '25px'}} />
           </div>
         </div>
       </div>

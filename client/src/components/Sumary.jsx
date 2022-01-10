@@ -2,7 +2,6 @@
 import React, {Fragment} from 'react';
 import {useSelector} from 'react-redux';
 import {selectFirstRequest, selectProcessing, selectRequest} from '../features/link/linkSlice';
-import Rolling from '../assets/images/Rolling-primary.svg';
 
 
 /**
@@ -42,7 +41,7 @@ function Sumary() {
               <div className="col-1 p-0">
                 {
                   processing ? (
-                    <img src={Rolling} alt="processing"/>
+                    <img src="/images/Rolling-primary.svg" alt="processing"/>
                   ) : (
                     <i className="far fa-check text-primary" style={{fontSize: '1.25rem'}}></i>
                   )

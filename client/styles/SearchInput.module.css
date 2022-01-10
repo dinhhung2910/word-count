@@ -1,0 +1,39 @@
+@media (max-width: 420px) {
+  .text-input {
+    display: none;
+  }
+  .btn-input {
+    height: 43px;
+    width: 50px;
+    display: flex;
+    max-width: 43px;
+    box-sizing: border-box;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-input {
+    font-size: 24px;
+    position: absolute;
+  }
+}
+@media (min-width: 576px) {
+  .w-input {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .w-input {
+    width: 75% !important;
+  }
+}
+@media (min-width: 992px) {
+  .w-input {
+    width: 60% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .w-input {
+    width: 50% !important;
+  }
+}

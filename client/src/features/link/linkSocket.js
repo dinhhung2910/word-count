@@ -57,7 +57,7 @@ function LinkSocket() {
   /* Init socket when mount element
    */
   useEffect(() => {
-    const requestSocket = io('/request', {
+    const requestSocket = io(`${process.env.NEXT_PUBLIC_API_SERVER}/request`, {
       transports: ['polling'],
       path: '/socket.io',
     });

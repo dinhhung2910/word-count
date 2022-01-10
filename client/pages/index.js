@@ -8,14 +8,14 @@ import {
   selectFirstRequest,
   selectProcessing,
   selectRequestId,
-} from '../features/link/linkSlice';
-import LinkSocket from '../features/link/linkSocket';
-import SearchHero from '../components/SearchHero';
-import LinksTable from '../components/LinksTable';
+} from '../src/features/link/linkSlice';
+import LinkSocket from '../src/features/link/linkSocket';
+import SearchHero from '../src/components/SearchHero';
+import LinksTable from '../src/components/LinksTable';
 
-import Rolling from '../assets/images/Rolling-primary.svg';
-import RollingWhite from '../assets/images/Rolling-white.svg';
-import Sumary from '../components/Sumary';
+import Sumary from '../src/components/Sumary';
+import Head from 'next/head';
+import PageHead from '../src/components/PageHead';
 
 export const WordCount = (props) => {
   const processing = useSelector(selectProcessing);
@@ -43,10 +43,13 @@ export const WordCount = (props) => {
 
   return (
     <Fragment>
+      <PageHead />
       <LinkSocket />
       <SearchHero />
       <div className="container mt-4 ">
-        <h2 className="h1 my-3"><span className="text-primary">Translate</span> your website with GTELocalize.</h2>
+        <h2 className="h1 my-3">
+          <span className="text-primary"></span> 
+          Estimated word count on your website.</h2>
         <div className="row ">
           <div className="col-8 mb-5">
             <div className="card h-100">
@@ -58,14 +61,14 @@ export const WordCount = (props) => {
                       first ? null : (
                         processing ? (
                           <div className="text-primary flex-vertical">
-                            <img src={Rolling} alt="crawling"/> <b>&ensp;Crawling... </b>
+                            <img src="/images/Rolling-primary.svg" alt="crawling"/> <b>&ensp;Crawling... </b>
                           </div>
                         ) : (
                           <button className="btn btn-export btn-primary"
                             onClick={exportResult}
                           >
                             {exporting ? (
-                              <img src={RollingWhite} alt="exporting" />
+                              <img src="/images/Rolling-white.svg" alt="exporting" />
                             ) : (
                               <i className="fal fa-download"></i>
                             )}
@@ -91,16 +94,5 @@ export const WordCount = (props) => {
   );
 };
 
-WordCount.propTypes = {
-  // props: PropTypes
-};
 
-const mapStateToProps = (state) => ({
-
-});
-
-const mapDispatchToProps = {
-
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(WordCount);
+export default WordCount;
